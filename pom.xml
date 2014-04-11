@@ -87,7 +87,7 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/bootstrap-tokenfield-${upstreamVersion}/dist" excludes="tests/,build/" />
+                                    <fileset dir="${project.build.directory}/bootstrap-tokenfield-${upstreamVersion}/dist" />
                                 </move>
                             </target>
                         </configuration>

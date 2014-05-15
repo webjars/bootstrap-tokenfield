@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>bootstrap-tokenfield</artifactId>
-    <version>0.11.10-SNAPSHOT</version>
+    <version>0.12.0-SNAPSHOT</version>
     <name>Bootstrap Tokenfield</name>
     <description>WebJar for Bootstrap Tokenfield</description>
     <url>http://webjars.org</url>
@@ -41,10 +41,11 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstreamVersion>0.11.9</upstreamVersion>
-        <upstreamTag>v0.11.9</upstreamTag>
+        <upstreamVersion>0.12.0</upstreamVersion>
+        <upstreamTag>v0.12.0</upstreamTag>
         <sourceUrl>https://github.com/sliptree/bootstrap-tokenfield/archive</sourceUrl>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstreamVersion}</destDir>
+        <requirejs/>
     </properties>
 
     <dependencies>
@@ -112,12 +113,6 @@
                 </configuration>
             </plugin>
         </plugins>
-        <resources>
-            <resource>
-                <directory>${project.basedir}/src/main/resources</directory>
-                <targetPath>${destDir}</targetPath>
-            </resource>
-        </resources>
     </build>
 
 </project>

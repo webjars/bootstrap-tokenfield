@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>bootstrap-tokenfield</artifactId>
-    <version>0.12.1-SNAPSHOT</version>
+    <version>0.12.1</version>
     <name>Bootstrap Tokenfield</name>
     <description>WebJar for Bootstrap Tokenfield</description>
     <url>http://webjars.org</url>
@@ -28,7 +28,7 @@
         <url>http://github.com/webjars/${project.artifactId}</url>
         <connection>scm:git:https://github.com/webjars/${project.artifactId}.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/${project.artifactId}.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>bootstrap-tokenfield-0.12.1</tag>
     </scm>
 
     <developers>
@@ -45,7 +45,7 @@
         <upstreamTag>v0.12.1</upstreamTag>
         <sourceUrl>https://github.com/sliptree/bootstrap-tokenfield/archive</sourceUrl>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstreamVersion}</destDir>
-        <requirejs/>
+        <requirejs />
     </properties>
 
     <dependencies>
@@ -84,11 +84,11 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
-                                <echo message="moving resources"/>
+                                <echo message="unzip archive" />
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
+                                <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/bootstrap-tokenfield-${upstreamVersion}/dist"/>
+                                    <fileset dir="${project.build.directory}/bootstrap-tokenfield-${upstreamVersion}/dist" />
                                 </move>
                             </target>
                         </configuration>

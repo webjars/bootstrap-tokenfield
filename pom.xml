@@ -41,8 +41,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstreamVersion>0.12.0</upstreamVersion>
-        <upstreamTag>v0.12.0</upstreamTag>
+        <upstreamVersion>0.12.1</upstreamVersion>
+        <upstreamTag>v0.12.1</upstreamTag>
         <sourceUrl>https://github.com/sliptree/bootstrap-tokenfield/archive</sourceUrl>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstreamVersion}</destDir>
         <requirejs/>
